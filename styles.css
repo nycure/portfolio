@@ -467,62 +467,33 @@ h1, h2, h3, h4, h5, h6, .logo {
     overflow: hidden;
 }
 
-/* Mobile Frame Style */
-.mobile-frame {
-    grid-row: span 2; 
-    width: 320px; /* Fixed width for phone look */
-    height: 640px; /* 1:2 aspect ratio for modern phones */
-    margin: 0 auto;
-    border-radius: 40px;
-    border: 12px solid #121212;
+/* Integrated Video Project Card */
+.video-project-card {
+    grid-row: span 2;
+    height: 600px;
     position: relative;
-    background: #000;
-    box-shadow: 0 0 0 2px #333, var(--glass-shadow);
-}
-
-.mobile-video-container {
-    height: 100%;
-    width: 100%;
-    position: relative;
+    border-radius: 20px;
     overflow: hidden;
-    border-radius: 28px; /* Match inner bezel */
 }
 
-.mobile-iframe {
-    width: 100%;
-    height: 110%; /* Make it taller to crop top/bottom */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5); /* Scale up significantly to hide controls */
-    border: none;
-    pointer-events: none; /* Disable interaction with Drive controls */
+.video-project-card .mobile-video-container {
+    border-radius: 0; /* Let it fill the card */
 }
 
-/* Add a notch for realism */
-.mobile-frame::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 25px;
-    background: #121212;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    z-index: 20;
+.video-project-card .mobile-iframe {
+    transform: translate(-50%, -50%) scale(1.6); /* Aggressive crop to hide Drive UI */
+    filter: brightness(0.8); /* Blend into dark theme */
 }
 
-.mobile-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-    z-index: 10;
+.video-project-card .mobile-overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.9) 20%, rgba(10, 10, 10, 0.4) 50%, transparent 100%);
 }
+
+.project-img-container {
 
 .mobile-overlay .project-header h3 {
     font-size: 1.8rem;
