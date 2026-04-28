@@ -542,7 +542,13 @@ h1, h2, h3, h4, h5, h6, .logo {
     transition: transform 0.3s ease;
 }
 
-.project-link:hover {
+.project-link.muted {
+    color: var(--text-muted);
+    font-weight: 400;
+    cursor: default;
+}
+
+.project-link:not(.muted):hover {
     transform: translateX(5px);
 }
 
