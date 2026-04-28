@@ -568,50 +568,7 @@ h1, h2, h3, h4, h5, h6, .logo {
     font-size: 1.1rem;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-group label {
-    font-family: var(--font-heading);
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.form-control {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--glass-border);
-    border-radius: 8px;
-    padding: 1rem;
-    color: var(--text-color);
-    font-family: var(--font-body);
-    font-size: 1rem;
-    transition: border-color 0.3s ease, background 0.3s ease;
-}
-
-textarea.form-control {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.form-control:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.submit-btn {
-    align-self: flex-start;
-    margin-top: 1rem;
-}
 
 /* Footer */
 footer {
