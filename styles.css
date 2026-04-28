@@ -157,6 +157,23 @@ h1, h2, h3, h4, h5, h6, .logo {
     width: 100%;
 }
 
+.nav-resume-btn {
+    padding: 0.5rem 1.2rem !important;
+    border: 1px solid var(--accent-color) !important;
+    border-radius: 4px;
+    color: var(--accent-color) !important;
+    transition: all 0.3s ease !important;
+}
+
+.nav-resume-btn:hover {
+    background: rgba(139, 92, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+.nav-resume-btn::after {
+    display: none; /* Remove underline for button */
+}
+
 /* Mobile Menu Button */
 .menu-btn {
     display: none;
@@ -304,6 +321,18 @@ h1, h2, h3, h4, h5, h6, .logo {
     animation-delay: -5s;
 }
 
+.cursor {
+    font-weight: 200;
+    color: var(--accent-color);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 @keyframes float {
     0% { transform: translate(0, 0) scale(1); }
     100% { transform: translate(30px, 50px) scale(1.1); }
@@ -415,22 +444,37 @@ h1, h2, h3, h4, h5, h6, .logo {
 }
 
 .skill-list {
-    list-style: none;
+    display: none; /* Replaced by icons grid */
 }
 
-.skill-list li {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    color: var(--text-muted);
+.skill-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-icon-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s ease;
 }
 
-.skill-list li::before {
-    content: '▹';
-    color: var(--accent-color);
-    margin-right: 10px;
-    font-size: 1.2rem;
+.skill-icon-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon-item i {
+    font-size: 2.5rem;
+}
+
+.skill-icon-item span {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-align: center;
 }
 
 /* Projects Section */
@@ -497,9 +541,24 @@ h1, h2, h3, h4, h5, h6, .logo {
 
 .project-desc {
     color: var(--text-muted);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 0.95rem;
     flex-grow: 1;
+}
+
+.project-impact {
+    font-size: 0.85rem;
+    color: #10b981; /* Success green */
+    background: rgba(16, 185, 129, 0.05);
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #10b981;
+    line-height: 1.4;
+}
+
+.project-impact i {
+    margin-right: 5px;
 }
 
 .project-tech {

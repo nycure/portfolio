@@ -51,4 +51,47 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Typewriter Effect
+const typewriterElement = document.getElementById('typewriter');
+const phrases = [
+    "Software Engineer",
+    "AI Specialist",
+    "Full-Stack Developer",
+    "Problem Solver"
+];
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 100;
+
+function type() {
+    const currentPhrase = phrases[phraseIndex];
+    
+    if (isDeleting) {
+        typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+    } else {
+        typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 100;
+    }
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+        isDeleting = true;
+        typeSpeed = 2000; // Wait at the end
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typeSpeed = 500;
+    }
+
+    setTimeout(type, typeSpeed);
+}
+
+// Start typewriter after a short delay
+window.addEventListener('load', () => {
+    setTimeout(type, 1000);
+});
+
 
