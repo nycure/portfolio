@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6, .logo {
 
 .section {
     padding: 6rem 0;
+    scroll-margin-top: var(--nav-height); /* Fix nav overlapping section titles */
 }
 
 .section-title {
@@ -402,7 +403,7 @@ h1, h2, h3, h4, h5, h6, .logo {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 2rem;
 }
 
@@ -564,6 +565,11 @@ h1, h2, h3, h4, h5, h6, .logo {
     transition: border-color 0.3s ease, background 0.3s ease;
 }
 
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
 .form-control:focus {
     outline: none;
     border-color: var(--accent-color);
@@ -598,6 +604,14 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .section {
+        padding: 4rem 0;
+    }
+    
     .nav-links {
         display: none;
     }
@@ -624,6 +638,10 @@ footer {
     
     .secondary-btn {
         margin-left: 0;
+    }
+    
+    .stats {
+        justify-content: space-between;
     }
 }
 
