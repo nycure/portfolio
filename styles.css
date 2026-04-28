@@ -467,6 +467,48 @@ h1, h2, h3, h4, h5, h6, .logo {
     overflow: hidden;
 }
 
+/* Mobile Frame Style */
+.mobile-frame {
+    grid-row: span 2; /* Make it taller in the grid */
+    height: 600px;
+    border-radius: 36px;
+    border: 8px solid #1a1a1a;
+    position: relative;
+}
+
+.mobile-video-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform: scale(1.05); /* Slight scale to hide some iframe edges if possible */
+}
+
+.mobile-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    z-index: 10;
+}
+
+.mobile-overlay .project-header h3 {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.mobile-overlay .project-tech {
+    margin-top: 1rem;
+}
+
 .project-img-container {
     width: 100%;
     height: 200px;
