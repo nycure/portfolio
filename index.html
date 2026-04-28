@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of a passionate Software Developer specializing in AI engineering and modern web applications.">
+    <title>Software Engineer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-content">
+            <a href="#" class="logo">Nitin<span class="accent">.Yadav</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-btn" aria-label="Toggle menu" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        
+        <div class="hero-content reveal">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name"><span class="accent">Nitin Yadav</span></h1>
+            <p class="subtitle">A Passionate Software Engineer building high-performance web applications and AI-driven systems.</p>
+            <div class="social-links">
+                <a href="https://github.com/nycure" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/me-nitinyadav/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/user2769XB/" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container reveal">
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a dedicated software engineer with a strong focus on AI engineering and modern web development. I thrive on creating scalable, elegant, and user-centric solutions.</p>
+                    <p>My journey in tech involves building complex automation systems, robust APIs, and dynamic user interfaces. I am continuously exploring new technologies to deliver impactful products.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Commitment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-container">
+                    <div class="profile-img-wrapper glass-card">
+                        <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-darker">
+        <div class="container reveal">
+            <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React / Next.js</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>Firebase</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>AI & Tools</h3>
+                    <ul class="skill-list">
+                        <li>Gemini API</li>
+                        <li>Prompt Engineering</li>
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Activity Section -->
+    <section id="activity" class="activity section">
+        <div class="container reveal">
+            <h2 class="section-title">Coding <span class="accent">Activity</span></h2>
+            <div class="iframe-container glass-card">
+                <iframe 
+                    src="https://codolio.com/profile/nitin._.yadav/card" 
+                    width="100%" 
+                    height="600"
+                    style="border:none;">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container reveal">
+            <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: Krishi Sarthi -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Krishi Sarthi</h3>
+                            <span class="project-badge">Mobile/AI</span>
+                        </div>
+                        <p class="project-desc">An agricultural application featuring AI-driven pest detection, interactive soil analysis sliders, and localized weather data to empower farmers.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>AI Integration</span>
+                        </div>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Blog Automation System -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Blog AI Automation</h3>
+                            <span class="project-badge">Backend/AI</span>
+                        </div>
+                        <p class="project-desc">A complex system demonstrating strong AI engineering capabilities by automating blog content generation, complete with E-E-A-T optimization.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Gemini API</span>
+                            <span>SEO Data</span>
+                        </div>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 3: HTML Editor / Resume Builder -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Pro HTML Editor</h3>
+                            <span class="project-badge">Web Tool</span>
+                        </div>
+                        <p class="project-desc">A highly optimized, SEO-friendly online HTML compiler and resume builder with robust iframe isolation and accessible UI.</p>
+                        <div class="project-tech">
+                            <span>Vanilla JS</span>
+                            <span>Web APIs</span>
+                            <span>Performance</span>
+                        </div>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bg-darker">
+        <div class="container reveal">
+            <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+            <div class="contact-content glass-card">
+                <p class="contact-text">I'm currently looking for new opportunities, specifically roles like AI Engineer or Frontend Developer. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required class="form-control" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Developed by Nitin Yadav. Built for GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
